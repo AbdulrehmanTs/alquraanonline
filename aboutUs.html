@@ -1,0 +1,200 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Quran Online - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <!-- Top Info -->
+    <section class="top-info-section">
+        <div class="top-info container-xl">
+            <div class="skype">
+                <i class="fab fa-skype"></i>
+                skype
+            </div>
+            <div class="contacts">
+                <div class="phone">
+                    <i class="fas fa-phone-square-alt"></i>
+                    +923101054094
+                </div>
+                <div class="whatsapp">
+                    <i class="fab fa-whatsapp-square"></i>
+                    +923101054094
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Navigation Section -->
+    <div class="container">
+        <div class="container-xl">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="index.html">
+                                <i class="fas fa-home"></i>
+                                <h5>Home</h5>
+                                <p>About home</p>
+                            </a>
+                            <a class="nav-link active" href="aboutUs.html">
+                                <i class="fas fa-user-tie"></i>
+                                <h5>About US</h5>
+                                <p>About home</p>
+                            </a>
+                            <a class="nav-link" href="courses.html">
+                                <i class="fas fa-book-open"></i>
+                                <h5>Courses</h5>
+                                <p>About home</p>
+                            </a>
+                            <a class="nav-link" href="pricing.html">
+                                <i class="fas fa-tags"></i>
+                                <h5>Pricing</h5>
+                                <p>About home</p>
+                            </a>
+                            <a class="nav-link" href="contact.html">
+                                <i class="fas fa-address-book"></i>
+                                <h5>Contact Us</h5>
+                                <p>About home</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navigation Section  Ends-->
+
+
+
+
+    <section class="temporary">
+        <div class="conatiner-xl">
+            <div style="text-align: center;">
+                <h1>About Us</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer Section -->
+    <section class="footer-section">
+        <img class="footer-logo" src="logo.png" alt="logo">
+        <div class="footer-social-links">
+            <i class="footer-social fab fa-facebook"></i>
+            <i class="footer-social fab fa-linkedin"></i>
+            <i class="footer-social fab fa-skype"></i>
+        </div>
+
+        <div class="nav-links">
+            <a class="footer-nav-link" href="">Home</a>
+            <a class="footer-nav-link" href="">About Us</a>
+            <a class="footer-nav-link" href="">Courses</a>
+            <a class="footer-nav-link" href="">Pricing</a>
+            <a class="footer-nav-link" href="">Contact</a>
+        </div>
+
+        <img class="payment-methods" src="payment-links.png" alt="">
+    </section>
+
+    <!-- Alright reserved -->
+    <section class="alright-section">
+        <div class="container-xl ">
+            <p>&reg; Al-Quraan Online 2021. All rights reserved.</p>
+        </div>
+    </section>
+    <script>
+
+        // PLan Cards Tabs
+        const planCard = document.querySelectorAll(".plan-card")
+        const planPage = document.querySelectorAll(".plans-page")
+
+        function showPenal(panelIndex) {
+            planCard.forEach(function (node) {
+                node.style.borderBottom = 'none';
+                node.style.backgroundColor = '#fff';
+                node.style.color = '#082755'
+            });
+            planPage.forEach(function (node) {
+                node.style.display = 'none';
+            });
+            planCard[panelIndex].style.borderBottom = '15px solid #082755';
+            planCard[panelIndex].style.backgroundColor = '#082755';
+            planCard[panelIndex].style.color = 'white'
+            planCard[panelIndex].style.fontWeight = 'bold';
+            planPage[panelIndex].style.display = 'block';
+        }
+        showPenal(0)
+
+        // Pricing Tabs Functions
+        const priceTab = document.querySelectorAll(".pricing-tab")
+        const priceCards = document.querySelectorAll(".pricing-cards")
+
+        function showCards(panelIndex) {
+            priceTab.forEach(function (node) {
+                node.style.borderBottom = 'none';
+                node.style.backgroundColor = '#fff';
+                node.style.color = '#082755'
+            });
+            priceCards.forEach(function (node) {
+                node.style.display = 'none';
+            });
+            priceTab[panelIndex].style.backgroundColor = '#082755';
+            priceTab[panelIndex].style.color = 'white'
+            priceTab[panelIndex].style.fontWeight = 'bold';
+            priceCards[panelIndex].style.display = 'block';
+        }
+        showCards(0)
+
+
+
+        // scroll to top button
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script src="bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
