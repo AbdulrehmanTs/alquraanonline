@@ -1,4 +1,8 @@
-
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Scroll to top button */
 
@@ -25,7 +29,7 @@
     color: #86b124;
   }
 
-  /* header section styles */
+/* navigation section styles */
 
 .logo{
     width: 200px
@@ -45,21 +49,21 @@
 /* Top Info */
 .top-info-section{
     border-bottom: 1px solid lightgray;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .top-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-.contacts{
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
 }
 
 .skype, .phone, .whatsapp{
-    width: 160px;
+    text-align: center;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
     padding-left: 10px;
@@ -442,6 +446,9 @@
 .footer-section img{
     cursor: pointer;
 }
+.payment-methods-photo{
+    width: 40%;
+}
 
 /* alright Reserved section */
 
@@ -466,7 +473,21 @@
 @media (max-width: 768px) { 
     .hero-right-column{
         display: none;
-    } 
+    }
+    .top-info-section{
+        flex-direction: column;
+    }
+    .top-info{
+        flex-direction: column;
+    }
+    .skype p, .phone p, .whatsapp p{
+        display: none;
+        font-size: 30px;
+    }
+    .skype i, .phone i , .whatsapp i{
+        display: block;
+        font-size: 30px;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
