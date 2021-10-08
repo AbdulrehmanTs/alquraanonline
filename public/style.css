@@ -583,6 +583,9 @@ html{
     .feature-title img{
         width: 190px;
     }
+    .feature-card{
+        width: 320px;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
