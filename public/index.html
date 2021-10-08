@@ -24,18 +24,18 @@
     <!-- Top Info -->
     <section class="top-info-section">
         <div class="row top-info container-xl">
-            <div class="skype col-lg-4 col-md-4 col-sm-10">
+            <div class="skype col" onclick="openSkype()">
                 <i class="fab fa-skype"></i>
-                skype
+                <a href="">skype</a>
             </div>
             <!-- <div class="contacts"> -->
-            <div class="phone col-lg-4 col-md-4 col-sm-10">
+            <div class="phone col" onclick="openPhone()">
                 <i class="fas fa-phone-square-alt"></i>
-                <p>+923101054094</p>
+                <a href="tel:+923212030529">+92 321 2030529</a>
             </div>
-            <div class="whatsapp col-lg-4 col-md-4 col-sm-10">
+            <div class="whatsapp col" onclick="openWhatsApp()">
                 <i class="fab fa-whatsapp-square"></i>
-                <p>+923101054094</p>
+                <a href="https://wa.me/00923212030529">+92 321 2030529</a>
             </div>
             <!-- </div> -->
         </div>
@@ -82,6 +82,18 @@
                                 <h5>Contact Us</h5>
                                 <p>About home</p>
                             </a>
+                            <a class="nav-link contact-link" onclick="openSkype()">
+                                <i class="contact-link fab fa-skype"></i>
+                                <h5 class="contact-link">skype</h5>
+                            </a>
+                            <a class="nav-link contact-link" onclick="openPhone()">
+                                <i class="contact-link fas fa-phone-square-alt "></i>
+                                <h5 class="contact-link">+92 321 2030529</h5>
+                            </a>
+                            <a class="nav-link contact-link" onclick="openWhatsApp()">
+                                <i class="contact-link fab fa-whatsapp-square"></i>
+                                <h5 class="contact-link">+92 321 2030529</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -96,22 +108,15 @@
         <div class="hero-section-overly">
             <div class="container-xl hero-container">
                 <div class="row">
-                    <div class=" hero-left-column col-lg-6 col-md-6 col-sm-12">
+                    <div class="hero-left-column col-lg-6 col-md-6 col-sm-12">
                         <h2>Read, Learn, Memorize and Revise</h2>
                         <h1>Al Quran Online</h1>
                         <h4>We warmly welcome all genders to come and understand the Holy Quran under our expertise.
                         </h4>
-
-                        <form>
-                            <select name="" id="">
-                                <option value="">For My Child</option>
-                                <option value="">For Myself</option>
-                            </select>
-                        </form>
                         <p>Our well trained Quran tutors will impress you - guaranted!</p>
                     </div>
                     <div class="hero-right-column  col-lg-6 col-md-6 col-sm-12">
-                        <img src="reading quraan.png" alt="">
+                        <img src="children5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -129,33 +134,59 @@
                     Pronunciation. We also provide the Tajweed classes to sharpen your Quranic skills.</h4>
             </div>
             <div class="feature-cards row">
-                <div class="feature-card col-lg-5 col-md-5 col-sm-10">
-                    <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                    <h3>Convinient Class Time</h3>
-                    <p>We offer convenient class timings for all regions around the world. We appreciate your efforts
-                        and manage our classes according to your regions and countries.</p>
-                    <a href=""> Pricing Plan</a>
+                <div class="col-lg-8 col-md-12 col-sm-12 row" style="justify-content: center;">
+                    <div class="col-lg-6 col-md-5 col-sm-10">
+                        <div class="feature-card">
+                            <img src="childrent4.png" alt="children">
+                            <div class="feature-card-info">
+                                <h3>Convinient Class Time</h3>
+                                <p>We offer convenient class timings for all regions around the world. We appreciate
+                                    your efforts
+                                    and manage our classes according to your regions and countries.</p>
+                                <a href=""> Pricing Plan</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-10">
+                        <div class="feature-card">
+                            <img src="children5.png" alt="">
+                            <div class="feature-card-info">
+                                <h3>Special Discount</h3>
+                                <p>15% for New & Disable Muslims. <br>
+                                    10% discount for siblings.<br>
+                                    10% discount on a Referrals.<br>
+                                    25% discount on annual payments.<br>
+                                    20% on 6 month payments.</p>
+                                <a href=""> Pricing Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-10">
+                        <div class="feature-card">
+                            <img src="children3.png" alt="">
+                            <div class="feature-card-info">
+                                <h3>Best Tutoring System</h3>
+                                <p>We have professional Quran tutors on the board and educate a vast range of students
+                                    worldwide through the easiest and simplest Quran tutoring system.</p>
+                                <a href=""> Pricing Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-10">
+                        <div class="feature-card">
+                            <img src="childrent4.png" alt="">
+                            <div class="feature-card-info">
+                                <h3>Live Holy Quran Classes</h3>
+                                <p>We also offer live Holy Quran classes for the students who want to learn Quran daily.
+                                    We intend to make your Quranic skills more vulnerable and unconventional.</p>
+                                <a href=""> Pricing Plan</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card col-lg-5 col-md-5 col-sm-10">
-                    <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                    <h3>Convinient Class Time</h3>
-                    <p>We offer convenient class timings for all regions around the world. We appreciate your efforts
-                        and manage our classes according to your regions and countries.</p>
-                    <a href=""> Pricing Plan</a>
-                </div>
-                <div class="feature-card col-lg-5 col-md-5 col-sm-10">
-                    <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                    <h3>Convinient Class Time</h3>
-                    <p>We offer convenient class timings for all regions around the world. We appreciate your efforts
-                        and manage our classes according to your regions and countries.</p>
-                    <a href=""> Pricing Plan</a>
-                </div>
-                <div class="feature-card col-lg-5 col-md-5 col-sm-10">
-                    <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                    <h3>Convinient Class Time</h3>
-                    <p>We offer convenient class timings for all regions around the world. We appreciate your efforts
-                        and manage our classes according to your regions and countries.</p>
-                    <a href=""> Pricing Plan</a>
+                <div class="side-pic col-lg-4 col-md-4 col-sm-12">
+                    <img src="islamic-art.jpg" alt="islamic-art">
                 </div>
             </div>
         </div>
@@ -166,7 +197,7 @@
         <div class="plans-section-overly">
             <div class="container-xl">
                 <div class="plan-title">
-                    <div class="container">
+                    <div class="plan-title-container">
                         <h1>Our Plan for Individual Courses</h1>
                         <h4>We undergo the versatile modules of the Quran’s tajweed learning to make you perfect anyhow.
                             Our
@@ -175,24 +206,35 @@
                             you comfortable while learning Tajweed.</h4>
                     </div>
 
-                    <div class="plan-cards row">
-                        <div class="plan-card col-lg-3 col-md-3 col-sm-8" onclick="showPenal(0)">
-                            <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                            <h3>Tajweed</h3>
-                            <div class="tip"></div>
+                    <div class="plan-cards">
+                        <div class="plan-card-container">
+                            <div class="plan-card " onclick="showPenal(0)">
+                                <img src="childrens.png" alt="">
+                                <h3>Tajweed</h3>
+                                <div class="tip"></div>
+                            </div>
                         </div>
-                        <div class="plan-card col-lg-3 col-md-3 col-sm-8" onclick="showPenal(1)">
-                            <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                            <h3>Quraan Reading</h3>
-                            <div class="tip"></div>
+
+                        <div class="plan-card-container">
+                            <div class="plan-card " onclick="showPenal(1)">
+                                <img src="children5.png" alt="">
+                                <h3>Quraan Reading</h3>
+                                <div class="tip"></div>
+                            </div>
                         </div>
-                        <div class="plan-card col-lg-3 col-md-3 col-sm-8" onclick="showPenal(2)">
-                            <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                            <h3>Quraan Memorization</h3>
-                            <div class="tip"></div>
+
+                        <div class="plan-card-container">
+                            <div class="plan-card" onclick="showPenal(2)">
+                                <img src="children2.png" alt="">
+                                <h3>Quraan Memorization</h3>
+                                <div class="tip"></div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <section class="plans-page-section">
@@ -207,7 +249,7 @@
                     <a href="">Get Enrolled now</a>
                 </div>
                 <div class="showplan-right-column  col-lg-6 col-md-6 col-sm-12">
-                    <img src="reading quraan.png" alt="">
+                    <img src="quran-calligraphy.png" alt="calligraphy">
                 </div>
             </div>
         </div>
@@ -222,7 +264,7 @@
                     <a href="">Get Enrolled now</a>
                 </div>
                 <div class="showplan-right-column  col-lg-6 col-md-6 col-sm-12">
-                    <img src="reading quraan.png" alt="">
+                    <img src="shahadat-calligraphy.png" alt="quran-calligraphy">
                 </div>
             </div>
         </div>
@@ -237,7 +279,7 @@
                     <a href="">Get Enrolled now</a>
                 </div>
                 <div class="showplan-right-column  col-lg-6 col-md-6 col-sm-12">
-                    <img src="reading quraan.png" alt="">
+                    <img src="beautiful-written-language.png" alt="calligraphy">
                 </div>
             </div>
         </div>
@@ -266,7 +308,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6 col-xms-10">
                             <div class="pricing-card">
-                                <img src="https://placeholder.pics/svg/100" alt="">
+                                <img src="childrent4.png" alt="">
                                 <h4>2 Days/Week</h4>
                                 <div class="price">
 
@@ -291,7 +333,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 col-xms-10">
                             <div class="pricing-card">
-                                <img src="https://placeholder.pics/svg/100" alt="">
+                                <img src="children5.png" alt="">
                                 <h4>2 Days/Week</h4>
                                 <div class="price">
 
@@ -395,7 +437,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 col-xms-10">
                             <div class="pricing-card">
-                                <img src="https://placeholder.pics/svg/100" alt="">
+                                <img src="children2.png" alt="">
                                 <h4>2 Days/Week</h4>
                                 <div class="price">
 
@@ -420,7 +462,7 @@
                         </div>
                         <div class=" col-lg-3 col-md-6 col-sm-6 col-xms-10">
                             <div class="pricing-card">
-                                <img src="https://placeholder.pics/svg/100" alt="">
+                                <img src="children3.png" alt="">
                                 <h4>2 Days/Week</h4>
                                 <div class="price">
 
@@ -693,85 +735,96 @@
                     Pronunciation. We also provide the Tajweed classes to sharpen your Quranic skills.</h4>
             </div>
             <div class="feature-cards row">
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                <div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                <div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                </div><div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                </div><div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                </div><div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                </div><div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                </div><div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                </div><div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-5 col-sm-10">
+                </div><div class="col-lg-4 col-md-5 col-sm-8">
                     <div class="feature-card">
-                        <img src="undraw_Google_docs_re_evm3.svg" alt="">
-                        <h3>Convinient Class Time</h3>
-                        <p>We offer convenient class timings. We appreciate your efforts and manage our classes
-                            according to your regions and countries.</p>
-                        <a href=""> Pricing Plan</a>
+                        <img src="childrent4.png" alt="">
+                        <div class="feature-card-info">
+                            <h3>Best Tutoring System</h3>
+                            <p>We have professional Quran tutors on the board and educate a vast range of students worldwide
+                                through the easiest and simplest Quran tutoring system.</p>
+                            <a href=""> Pricing Plan</a>
+                        </div>
                     </div>
                 </div>
 
@@ -782,23 +835,25 @@
 
     <!-- Teachers Availability -->
     <section class="teacher-avail-section">
-        <div class="container-xl">
-            <div class="row d-flex justify-content-center">
-                <div class="avail-container col-lg-3 col-md-5 col-sm-5 ">
-                    <h2>200+</h2>
-                    <h5>Registered Students</h5>
-                </div>
-                <div class="avail-container col-lg-3 col-md-5 col-sm-5 ">
-                    <h2>30+</h2>
-                    <h5>Quraan Tutors Available</h5>
-                </div>
-                <div class="avail-container col-lg-3 col-md-5 col-sm-5">
-                    <h2>300+</h2>
-                    <h5>Sessions Completed</h5>
-                </div>
-                <div class="avail-container col-lg-3 col-md-5 col-sm-5">
-                    <h2>95%</h2>
-                    <h5>Setisfied customers</h5>
+        <div class="teacher-avail-overly">
+            <div class="container-xl">
+                <div class="row d-flex justify-content-center">
+                    <div class="avail-container col-lg-3 col-md-5 col-sm-5 ">
+                        <h2>200+</h2>
+                        <h5>Registered Students</h5>
+                    </div>
+                    <div class="avail-container col-lg-3 col-md-5 col-sm-5 ">
+                        <h2>30+</h2>
+                        <h5>Quraan Tutors Available</h5>
+                    </div>
+                    <div class="avail-container col-lg-3 col-md-5 col-sm-5">
+                        <h2>300+</h2>
+                        <h5>Sessions Completed</h5>
+                    </div>
+                    <div class="avail-container col-lg-3 col-md-5 col-sm-5">
+                        <h2>95%</h2>
+                        <h5>Setisfied customers</h5>
+                    </div>
                 </div>
             </div>
         </div>
@@ -964,6 +1019,16 @@
     </section>
     <script>
 
+
+        // Open Links
+
+        function openWhatsApp() {
+            window.location.href = 'https://wa.me/00923212030529'
+        }
+
+        function openPhone() {
+            window.location.href = 'tel:+923212030529'
+        }
         // PLan Cards Tabs
         const planCard = document.querySelectorAll(".plan-card")
         const planPage = document.querySelectorAll(".plans-page")
@@ -973,6 +1038,7 @@
                 node.style.borderBottom = 'none';
                 node.style.backgroundColor = '#fff';
                 node.style.color = '#082755'
+                node.style.boxShadow = 'none'
             });
             planPage.forEach(function (node) {
                 node.style.display = 'none';
@@ -981,6 +1047,7 @@
             planCard[panelIndex].style.backgroundColor = '#082755';
             planCard[panelIndex].style.color = 'white'
             planCard[panelIndex].style.fontWeight = 'bold';
+            planCard[panelIndex].style.boxShadow = '0px 5px 10px rgba(189, 189, 189, 0.735)';
             planPage[panelIndex].style.display = 'block';
         }
         showPenal(0)
@@ -994,6 +1061,8 @@
                 node.style.borderBottom = 'none';
                 node.style.backgroundColor = '#fff';
                 node.style.color = '#082755'
+                node.style.fontWeight = 'normal'
+                node.style.textDecoration = 'none'
             });
             priceCards.forEach(function (node) {
                 node.style.display = 'none';
@@ -1001,6 +1070,7 @@
             priceTab[panelIndex].style.backgroundColor = '#082755';
             priceTab[panelIndex].style.color = 'white'
             priceTab[panelIndex].style.fontWeight = 'bold';
+            priceTab[panelIndex].style.textDecoration = 'underline';
             priceCards[panelIndex].style.display = 'block';
         }
         showCards(0)
